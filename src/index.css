@@ -1,0 +1,8 @@
+@import '~antd/dist/antd.css';
+
+html,
+body,
+#root, .App {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}

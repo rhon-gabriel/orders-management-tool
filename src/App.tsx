@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { FC } from "react";
+import ButtonPrimary from "./components/UIElements/ButtonPrimary";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
-      Orders management tool
+      <div>Hello</div>
+      <ButtonPrimary text={"See your orders"} />
     </div>
   );
-}
+};
 
 export default App;
