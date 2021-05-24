@@ -1,12 +1,16 @@
 import React, { FC } from "react";
-import ButtonPrimary from "./components/UIElements/ButtonPrimary";
+import HomePage from "./containers/HomePage/HomePage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AppContainer from "./containers/AppContainer/AppContainer";
 
 const App: FC = () => {
   return (
-    <div className="App">
-      <div>Hello</div>
-      <ButtonPrimary text={"See your orders"} />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/orders" component={AppContainer} />
+      </Switch>
+    </Router>
   );
 };
 

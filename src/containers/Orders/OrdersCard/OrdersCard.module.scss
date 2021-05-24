@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+
+  .title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #f7797d;
+    text-align: center;
+  }
+
+  .cardContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    :hover {
+      transform: scale(1.01);
+    }
+    .card {
+      position: relative;
+      border-radius: 12px;
+      box-shadow: 3px 3px 6px -2px #274046;
+      background-color: white;
+      width: 280px;
+      height: 305px;
+      margin: 5px 15px;
+      padding: 15px 10px;
+      overflow-y: scroll;
+      .tag {
+        border-radius: 10px;
+        height: 20px;
+        position: absolute;
+        top: 2;
+        right: 0;
+      }
+      .sender {
+        margin-top: 15px;
+        font-size: 32px;
+        font-weight: 600;
+        color: #f7797d;
+      }
+      .emoji {
+        padding-top: 3px;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+      }
+      .subHeader {
+        font-size: 20px;
+        font-weight: 600;
+        color: #0b486b;
+        display: flex;
+        justify-content: center;
+      }
+      .contentBottom {
+        position: absolute;
+        bottom: 0;
+      }
+      .contentKey {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+      .contentValue {
+        font-size: 12px;
+        line-height: 22px;
+      }
+      :global {
+        .ant-divider-horizontal {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
